@@ -1,0 +1,12 @@
+
+global:
+  version: 1.x
+  css:
+    theme:
+      assets/css/app.css:  {}
+     
+     
+  js:
+    assets/js/app.js: {}
+    https://cdn.polyfill.io/v2/polyfill.js: { type: external }
+ 

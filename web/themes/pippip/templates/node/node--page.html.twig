@@ -1,0 +1,44 @@
+<h1 class="text-center">Lorem Ipsum Dloar Ismet</h1>
+
+
+<div class="container">
+	<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+		<li class="nav-item">
+			<a class="nav-link active" id="reference-tab" data-toggle="tab" data-bs-target="#reference" href="#reference" role="tab" aria-controls="references" aria-selected="true">{{ 'Recommended Conferences'|t }}</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="feature-tab" data-toggle="tab" data-bs-target="#feature" href="#feature" role="tab" aria-controls="feature" aria-selected="false">{{ 'Featured Conferences'|t }}</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="past-tab" data-toggle="tab" href="#past" data-bs-target="#past" role="tab" aria-controls="past" aria-selected="false">{{ 'Past Conferences'|t }}</a>
+		</li>
+	</ul>
+	<div class="tab-content" id="myTabContent">
+		<div class="tab-pane fade show active" id="feature" role="tabpanel" aria-labelledby="reference-tab">
+			<div class="card-content">
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+
+			</div>
+		</div>
+		<div class="tab-pane fade" id="feature" role="tabpanel" aria-labelledby="feature-tab">
+			<div class="card-content">
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="past-tab">
+			<div class="card-content">
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+				<div>{% include '@pippip/templates/partials/cards.html.twig' %}</div>
+			</div>
+		</div>
+	</div>
+
+</div>

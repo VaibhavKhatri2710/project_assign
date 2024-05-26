@@ -1,0 +1,40 @@
+<section class="card-wrapper">
+	<div class="card">
+		<div class="card-img-top">
+			{% if content.field_teaser_image|render %}
+				<img src="{{ file_url(content.field_teaser_image['#items'].entity.uri.value) }}" alt="{{ node.field_teaser_image.alt }}">
+			{% else %}
+				{{ node.title.value }}
+			{% endif %}
+		</div>
+		<div class="card-image-content">
+			<h5 class="card-title">
+				{{ node.title.value }}</h5>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					{% include '@pippip/assets/img/tags-fill.svg' %}
+					Management, Leadership</li>
+				<li class="list-group-item">
+					{% include '@pippip/assets/img/calendar.svg' %}
+					Dapibus ac facilisis in</li>
+				<li class="list-group-item">
+					{% include '@pippip/assets/img/geo-alt-fill.svg' %}
+					Vestibulum at eros</li>
+			</ul>
+			<div class="card-body card-body-visit">
+				<ul>
+					<li>
+						{% include '@pippip/assets/img/heart.svg' %}
+					</li>
+					<li>
+						{% include '@pippip/assets/img/cloud-arrow-down-fill.svg' %}
+					</li>
+					<li>
+						{% include '@pippip/assets/img/share-fill.svg' %}
+					</li>
+				</ul>
+				<a href="#" class="card-link">View More</a>
+			</div>
+		</div>
+	</div>
+</section>
