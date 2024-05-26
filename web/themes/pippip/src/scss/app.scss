@@ -231,3 +231,20 @@
     opacity: 0.75;
     color: var(--info);
 }
+
+// cursor
+
+#cursor {
+    background-color: transparent;
+    border: 2px solid var(--info);
+    height: 30px;
+    width: 30px;
+    display: none;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+}
+#cursor.visible {
+    display: block;
+}
