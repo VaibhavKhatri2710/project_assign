@@ -23,26 +23,27 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
 // cursor
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var cursor = document.getElementById('cursor');
-    var isClicking = false;
+    var point = false;
 
-    document.addEventListener('mousemove', function(e) {
-        if (!isClicking) return;
+    document.addEventListener('mousemove', function (e) {
+        if (e.target.classList.contains('slick-arrow')) return;
         cursor.style.left = (e.pageX - 15) + 'px';
         cursor.style.top = (e.pageY - 15) + 'px';
     });
 
-    document.addEventListener('click', function(e) {
-        isClicking = true;
+    document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('slick-arrow')) return;
+        point = true;
 
         cursor.style.left = (e.pageX - 15) + 'px';
         cursor.style.top = (e.pageY - 15) + 'px';
         cursor.classList.add('visible');
 
-        setTimeout(function() {
+        setTimeout(function () {
             cursor.classList.remove('visible');
-            isClicking = false;
+            point = false;
         }, 300);
     });
 });

@@ -90,6 +90,7 @@ section.card-wrapper .card-body-visit ul li svg:hover {
 .nav-tabs .nav-item .nav-link {
   border: none !important;
   font-weight: 500;
+  cursor: default;
   font-size: 16px;
   color: var(--info);
 }
@@ -155,27 +156,6 @@ section.card-wrapper .card-body-visit ul li svg:hover {
   background: transparent;
 }
 
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  color: transparent;
-  outline: none;
-  background: transparent;
-}
-
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
-  opacity: 1;
-}
-
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: 0.25;
-}
-
 .slick-prev {
   left: -40px;
 }
@@ -185,11 +165,11 @@ section.card-wrapper .card-body-visit ul li svg:hover {
   background-size: 40px 40px;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
+  left: -20px;
+  padding: 27px;
+  width: 44px;
+  height: 44px;
   opacity: 0.75;
-  color: transparent;
 }
 
 .slick-prev:hover:before {
@@ -197,12 +177,14 @@ section.card-wrapper .card-body-visit ul li svg:hover {
   background: url("/themes/pippip/assets/img/chevron-left-blue.svg") no-repeat fixed center;
   background-size: 40px 40px;
   position: absolute;
+  border: 2px solid var(--info);
+  border-radius: 50%;
   top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
+  left: -20px;
+  padding: 25px;
+  width: 44px;
+  height: 44px;
   opacity: 0.75;
-  color: transparent;
 }
 
 .slick-next {
@@ -215,10 +197,10 @@ section.card-wrapper .card-body-visit ul li svg:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 24px;
-  height: 24px;
+  padding: 25px;
+  width: 44px;
+  height: 44px;
   opacity: 0.75;
-  color: transparent;
 }
 
 .slick-next:hover:before {
@@ -226,12 +208,14 @@ section.card-wrapper .card-body-visit ul li svg:hover {
   background: url("/themes/pippip/assets/img/chevron-right-blue.svg") no-repeat fixed center;
   background-size: 40px 40px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
+  border: 2px solid var(--info);
+  border-radius: 50%;
+  padding: 25px;
+  top: -2px;
+  left: -2px;
+  width: 44px;
+  height: 44px;
   opacity: 0.75;
-  color: transparent;
 }
 
 /* Dots */
@@ -243,17 +227,6 @@ section.card-wrapper .card-body-visit ul li svg:hover {
   margin-bottom: 30px;
 }
 
-.slick-dots {
-  position: absolute;
-  bottom: -25px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-}
-
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -263,45 +236,16 @@ section.card-wrapper .card-body-visit ul li svg:hover {
   padding: 0;
   cursor: pointer;
 }
-
-.slick-dots li button {
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  color: transparent;
-  border: 0;
-  outline: none;
-  background: transparent;
-}
-
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-  outline: none;
-}
-
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-  opacity: 1;
-}
-
 .slick-dots li button:before {
-  font-size: 6px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
+  font-size: 10px;
+  line-height: 10px;
+  width: 13px;
+  height: 12px;
+  border-radius: 50%;
   content: "•";
-  text-align: center;
   opacity: 0.25;
-  color: grey;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  border: 2px solid var(--info);
+  color: var(--white);
 }
 
 .slick-dots li.slick-active button:before {
