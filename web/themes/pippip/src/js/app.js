@@ -1,3 +1,5 @@
+// Slider
+
 $(document).ready(function () {
     $('.card-content').slick({
         infinite: true,
