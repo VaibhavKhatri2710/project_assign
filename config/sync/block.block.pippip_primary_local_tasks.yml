@@ -1,0 +1,22 @@
+uuid: 63c57d4c-c66c-458b-9681-31aa0e005db1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pippip
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: pippip_primary_local_tasks
+theme: pippip
+region: admin
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

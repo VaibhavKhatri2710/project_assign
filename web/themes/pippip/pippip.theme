@@ -1,0 +1,6 @@
+<?php
+
+function mymodule_page_attachments(array &$attachments) {
+  // Attach the 'global' library to all pages.
+  $attachments['#attached']['library'][] = 'pippip/global';
+}

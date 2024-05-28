@@ -1,0 +1,20 @@
+uuid: 4d7bbec2-b6e0-48a8-a20d-3a17909ffd00
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pippip
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: pippip_primary_admin_actions
+theme: pippip
+region: admin
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

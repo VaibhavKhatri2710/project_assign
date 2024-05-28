@@ -1,0 +1,25 @@
+uuid: d1e80625-2584-4d48-b714-146a6ef7fb13
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pippip
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: pippip_site_branding
+theme: pippip
+region: admin
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 1e2d6dc8-2db3-474d-868c-bf3d3ba883d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - pippip
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: pippip_syndicate
+theme: pippip
+region: admin
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }
