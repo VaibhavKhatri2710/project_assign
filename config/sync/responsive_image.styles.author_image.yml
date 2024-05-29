@@ -1,0 +1,29 @@
+uuid: 84bc7b11-b252-412f-a35b-942cb593e013
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.medium
+    - image.style.thumbnail
+  theme:
+    - stark
+id: author_image
+label: 'Author image'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: stark.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: stark.narrow
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+    breakpoint_id: stark.mobile
+    multiplier: 1x
+breakpoint_group: stark
+fallback_image_style: thumbnail

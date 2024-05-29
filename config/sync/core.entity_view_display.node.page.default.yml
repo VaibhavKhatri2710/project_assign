@@ -6,8 +6,9 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_teaser_image
     - node.type.page
+    - responsive_image.styles.author_image
   module:
-    - image
+    - responsive_image
     - text
     - user
 _core:
@@ -25,17 +26,19 @@ content:
     weight: 100
     region: content
   field_teaser_image:
-    type: image
+    type: responsive_image
     label: above
     settings:
+      responsive_image_style: author_image
       image_link: ''
-      image_style: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
     weight: 102
     region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 101
     region: content
 hidden: {  }
