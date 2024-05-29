@@ -1,8 +1,9 @@
+
 <section class="card-wrapper">
 	<div class="card">
 		<div class="card-img-top">
 			{% if content.field_teaser_image|render %}
-				<img src="{{ file_url(content.field_teaser_image['#items'].entity.uri.value) }}" alt="{{ node.field_teaser_image.alt }}">
+				{{ content.field_teaser_image }}
 			{% else %}
 				{{ node.title.value }}
 			{% endif %}
